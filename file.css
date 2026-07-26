@@ -5,6 +5,11 @@ body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.navbar, .navbar-default, .navbar-inverse, .topbar {
+    background: #140F0A !important;
+    border-bottom: 2px solid #FF7A00 !important;
+}
+
 .navbar-brand {
     height: auto !important;
     padding: 5px 15px !important;
@@ -12,21 +17,17 @@ body {
 
 .navbar-brand img {
     content: url('https://cdn.mos.cms.futurecdn.net/v2/t:0,l:441,cw:1038,ch:1038,q:80,w:1038/DXSG53G46Pv35KJtu69cr.jpg') !important;
-    max-height: 80px !important; 
+    max-height: 70px !important; 
     width: auto !important;
+    margin-left: 10px !important;
 }
 
-.navbar-inverse, .topbar {
-    background: #140F0A !important;
-    border-bottom: 2px solid #FF7A00 !important;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-    color: #E0E0E0 !important;
-}
-
-.navbar-inverse .navbar-nav > li > a:hover {
+.navbar-nav > li > a, .navbar-default .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > a {
     color: #FF9F43 !important;
+}
+
+.navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:hover {
+    color: #FF7A00 !important;
 }
 
 .container.main, .col-md-9, .col-md-3, .col-md-12, .well, .panel {
@@ -45,30 +46,37 @@ body {
     color: #F5F5F5 !important;
 }
 
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5, .stat-header, [class*="header"] {
+    color: #FF9F43 !important;
+}
+
 .progress {
     background-color: #231E19 !important;
     border: 1px solid #FF7A00 !important;
     border-radius: 4px !important;
     height: 18px !important;
+    color: #FFFFFF !important;
 }
 
-.progress-bar, .progress-bar-success {
+.progress-bar, .progress-bar-success, .progress-bar-info, .progress-bar-warning, .progress-bar-danger {
     background: #D35400 !important; 
     background-image: linear-gradient(to bottom, #FF7A00 0%, #D35400 100%) !important;
     color: #FFFFFF !important;
     font-weight: bold !important;
+    text-shadow: 1px 1px 2px #000000 !important;
 }
 
-.top, th, .panel-heading, .feature_box_header, .top_bar, div.sub-header {
+.top, th, .panel-heading, .feature_box_header, .top_bar, div.sub-header, .header {
     background: #D35400 !important;
     color: #FFFFFF !important;
     font-weight: bold !important;
     border-bottom: 2px solid #FF7A00 !important;
 }
 
-.bottom, td, .feature_box {
+.bottom, td, .feature_box, .containerButton, .col-md-4 .well {
     background: rgba(20, 18, 15, 0.6) !important;
     color: #E5E5E5 !important;
+    border: 1px solid rgba(255, 122, 0, 0.2) !important;
 }
 
 .cave-grid, .mound-grid, .boulder-grid, .inner-table td, [class*="cave"] {
@@ -88,18 +96,35 @@ body {
 
 .cave-grid > img, .cave-grid img, img[src*="cave"] {
     content: url('https://prod.assets.earlygamecdn.com/images/Markiplier-Iron-Lung.png') !important;
-    width: 120px !important;   
-    height: 90px !important;  
+    width: 100% !important;   
+    max-width: 140px !important;
+    height: auto !important;  
     object-fit: contain !important;
     margin: 0 auto 5px auto !important;
 }
 
 .mound-grid > img, .mound-grid img, img[src*="mound"] {
     content: url('https://sm.ign.com/t/ign_nordic/video/h/how-markip/how-markiplier-is-trying-to-break-the-video-game-movie-mold_p9t6.1280.jpg') !important;
-    width: 120px !important;   
-    height: 90px !important;  
+    width: 100% !important;   
+    max-width: 140px !important;
+    height: auto !important;  
     object-fit: contain !important;
     margin: 0 auto 5px auto !important;
+}
+
+#chatContainer, #chatMessageContainer, .chat_message, .s-chat-message, #chatRoom, .chat-header {
+    background: #140F0A !important;
+    color: #FFFFFF !important;
+    border: 1px solid rgba(255, 122, 0, 0.3) !important;
+}
+
+.chat_message, .s-chat-message {
+    background: rgba(35, 30, 25, 0.8) !important;
+    border-bottom: 1px solid rgba(255, 122, 0, 0.1) !important;
+}
+
+#chatMessageContainer a, .chat_message a, .s-chat-message a {
+    color: #FF9F43 !important;
 }
 
 .breadcrumb, .alert-info, .alert-warning, .jumbotron, .modal-content, .popover {
@@ -123,13 +148,13 @@ a:hover, a:active {
     text-decoration: underline !important;
 }
 
-.btn-primary, .btn, .button {
+.btn-primary, .btn, .button, input[type="button"], input[type="submit"] {
     background: #D35400 !important;
     border: 1px solid #FF7A00 !important;
     color: #FFFFFF !important;
 }
 
-.btn-primary:hover, .btn:hover {
+.btn-primary:hover, .btn:hover, input[type="button"]:hover, input[type="submit"]:hover {
     background: #E67E22 !important;
 }
 
