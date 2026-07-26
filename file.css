@@ -5,9 +5,14 @@ body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.navbar-brand {
+    height: auto !important;
+    padding: 5px 15px !important;
+}
+
 .navbar-brand img {
     content: url('https://cdn.mos.cms.futurecdn.net/v2/t:0,l:441,cw:1038,ch:1038,q:80,w:1038/DXSG53G46Pv35KJtu69cr.jpg') !important;
-    max-height: 50px !important; 
+    max-height: 80px !important; 
     width: auto !important;
 }
 
@@ -54,17 +59,93 @@ body {
     font-weight: bold !important;
 }
 
-.top, th, .panel-heading {
+.top, th, .panel-heading, .feature_box_header, .top_bar, div.sub-header {
     background: #D35400 !important;
     color: #FFFFFF !important;
     font-weight: bold !important;
     border-bottom: 2px solid #FF7A00 !important;
 }
 
-.bottom, td {
+.bottom, td, .feature_box {
+    background: rgba(20, 18, 15, 0.6) !important;
     color: #E5E5E5 !important;
 }
 
 .cave-grid, .mound-grid, .boulder-grid, .inner-table td, [class*="cave"] {
     background: rgba(20, 18, 15, 0.6) !important; 
-    border: 1px solid rgba(255,
+    border: 1px solid rgba(255, 122, 0, 0.2) !important;
+    border-radius: 8px !important;
+    padding: 10px !important;
+}
+
+.cave-grid a, .mound-grid a, .cave-grid div, .mound-grid div, .caption, .clan-name {
+    background: #140F0A !important;
+    color: #FF9F43 !important;
+    border-radius: 4px !important;
+    padding: 4px !important;
+    text-align: center !important;
+}
+
+.cave-grid > img, .cave-grid img, img[src*="cave"] {
+    content: url('https://prod.assets.earlygamecdn.com/images/Markiplier-Iron-Lung.png') !important;
+    width: 120px !important;   
+    height: 90px !important;  
+    object-fit: contain !important;
+    margin: 0 auto 5px auto !important;
+}
+
+.mound-grid > img, .mound-grid img, img[src*="mound"] {
+    content: url('https://sm.ign.com/t/ign_nordic/video/h/how-markip/how-markiplier-is-trying-to-break-the-video-game-movie-mold_p9t6.1280.jpg') !important;
+    width: 120px !important;   
+    height: 90px !important;  
+    object-fit: contain !important;
+    margin: 0 auto 5px auto !important;
+}
+
+.breadcrumb, .alert-info, .alert-warning, .jumbotron, .modal-content, .popover {
+    background-color: #140F0A !important; 
+    border: 1px solid #FF7A00 !important;
+    color: #FFFFFF !important;
+}
+
+.breadcrumb li a, .breadcrumb li {
+    color: #FF9F43 !important;
+}
+
+a:link, a:visited, .clan-desc {
+    color: #FF9F43 !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover, a:active {
+    color: #FF7A00 !important;
+    text-decoration: underline !important;
+}
+
+.btn-primary, .btn, .button {
+    background: #D35400 !important;
+    border: 1px solid #FF7A00 !important;
+    color: #FFFFFF !important;
+}
+
+.btn-primary:hover, .btn:hover {
+    background: #E67E22 !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(20, 15, 10, 0.9);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D35400;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FF9F43;
+}
