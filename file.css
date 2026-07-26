@@ -1,16 +1,31 @@
 body {
-    background: url('https://www.tubefilter.com/wp-content/uploads/2022/11/Screen-Shot-2022-11-11-at-5.34.17-PM-1400x825.png') no-repeat center center fixed !important;
+    background: url('https://tubefilter.com') no-repeat center center fixed !important;
     background-size: cover !important;
     color: #FFFFFF !important;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+.container.main, .col-md-9, .col-md-3, .col-md-12, .well, .panel {
+    background: rgba(20, 18, 15, 0.70) !important;
+    border: 1px solid rgba(255, 122, 0, 0.3) !important;
+    border-radius: 12px !important;
+    padding: 15px !important;
+    margin-bottom: 15px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;
+}
+.table, .inner-table, .card, .box, tr:nth-child(even), tr:nth-child(odd) {
+    background: rgba(35, 30, 25, 0.5) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 8px !important;
+    color: #F5F5F5 !important;
+}
 .navbar-brand img {
-    content: url('https://cdn.mos.cms.futurecdn.net/v2/t:0,l:441,cw:1038,ch:1038,q:80,w:1038/DXSG53G46Pv35KJtu69cr.jpg') !important;
+    content: url('https://futurecdn.net') !important;
     max-height: 50px !important; 
     width: auto !important;
 }
 .navbar-inverse, .topbar {
-    background: rgba(20, 15, 10, 0.9) !important;
+    background: #140F0A !important;
+    opacity: 1.0 !important;
     border-bottom: 2px solid #FF7A00 !important;
 }
 .navbar-inverse .navbar-nav > li > a {
@@ -19,21 +34,21 @@ body {
 .navbar-inverse .navbar-nav > li > a:hover {
     color: #FF9F43 !important;
 }
-.container.main, .col-md-9, .col-md-3, .col-md-12 {
-    background: rgba(20, 18, 15, 0.82) !important;
-    border: 1px solid rgba(255, 122, 0, 0.2) !important;
-    border-radius: 12px !important;
-    padding: 15px !important;
-    margin-bottom: 15px !important;
+.progress {
+    background-color: #231E19 !important;
+    border: 1px solid #FF7A00 !important;
+    border-radius: 4px !important;
+    height: 18px !important;
+    opacity: 1.0 !important;
 }
-.table, .inner-table, .panel, .well, .card, .box {
-    background: rgba(35, 30, 25, 0.5) !important;
-    border: 1px solid rgba(255, 255, 255, 0.05) !important;
-    border-radius: 8px !important;
-    color: #F5F5F5 !important;
+.progress-bar, .progress-bar-success {
+    background: #D35400 !important; 
+    background-image: linear-gradient(to bottom, #FF7A00 0%, #D35400 100%) !important;
+    color: #FFFFFF !important;
+    font-weight: bold !important;
 }
 .top, th, .panel-heading {
-    background: rgba(211, 84, 0, 0.85) !important;
+    background: rgba(211, 84, 0, 1.0) !important;
     color: #FFFFFF !important;
     font-weight: bold !important;
     border-bottom: 2px solid #FF7A00 !important;
@@ -41,11 +56,43 @@ body {
 .bottom, td {
     color: #E5E5E5 !important;
 }
-img[src*="cave.png"] {
-    content: url('https://prod.assets.earlygamecdn.com/images/Markiplier-Iron-Lung.png') !important;
+.cave-grid, .mound-grid, .boulder-grid, .inner-table td, [class*="cave"] {
+    background: rgba(20, 18, 15, 0.6) !important;
+    border: 1px solid rgba(255, 122, 0, 0.2) !important;
+    border-radius: 8px !important;
+    padding: 10px !important;
 }
-img[src*="mound.png"] {
-    content: url('https://sm.ign.com/t/ign_nordic/video/h/how-markip/how-markiplier-is-trying-to-break-the-video-game-movie-mold_p9t6.1280.jpg') !important;
+.cave-grid a, .mound-grid a, .cave-grid div, .mound-grid div, .caption {
+    background: #140F0A !important;
+    color: #FF9F43 !important;
+    border-radius: 4px !important;
+    padding: 4px !important;
+    display: block !important;
+    text-align: center !important;
+}
+img[src*="cave.png"], .cave-grid img {
+    content: url('https://earlygamecdn.com') !important;
+    width: 120px !important;   
+    height: 90px !important;  
+    object-fit: contain !important;
+    display: block !important;
+    margin: 0 auto 5px auto !important;
+}
+img[src*="mound.png"], .mound-grid img {
+    content: url('https://ign.com') !important;
+    width: 120px !important;   
+    height: 90px !important;  
+    object-fit: contain !important;
+    display: block !important;
+    margin: 0 auto 5px auto !important;
+}
+.breadcrumb, .alert-info, .alert-warning, .jumbotron, .modal-content, .popover {
+    background-color: #140F0A !important; 
+    border: 1px solid #FF7A00 !important;
+    color: #FFFFFF !important;
+}
+.breadcrumb li a, .breadcrumb li {
+    color: #FF9F43 !important;
 }
 a:link, a:visited {
     color: #FF9F43 !important;
@@ -58,7 +105,7 @@ a:hover, a:active {
 }
 .btn-primary {
     background: #D35400 !important;
-    border: none !important;
+    border: 1px solid #FF7A00 !important;
     color: #FFFFFF !important;
 }
 .btn-primary:hover {
